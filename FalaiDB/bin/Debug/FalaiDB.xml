@@ -1,0 +1,125 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FalaiDB
+</name>
+</assembly>
+<members>
+<member name="T:FalaiDB.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:FalaiDB.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:FalaiDB.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:FalaiDB.MODULO_CONFIGURACOES.Configuracao.USAR_AUDITORIA">
+ <summary>
+ HABILITA OU DESABILITA A AUDITORIA DO SISTEMA
+ </summary>
+ <remarks>Anereu Bighetti (AJB) - 15/10/2008</remarks>
+</member>
+<member name="M:FalaiDB.MODULO_CONFIGURACOES.Utils.PadCenter(System.String,System.Int32)">
+ <summary>
+ Função para fazer Pad Centralizado de texto
+ </summary>
+ <param name="text"></param>
+ <param name="newWidth"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:FalaiDB.MODULO_CONFIGURACOES.Utils.ArquivoParaBase64(System.String)">
+ <summary>
+ Função para transformar aquivo físico em String Base64
+ </summary>
+ <param name="strCaminhoArquivo">String: Caminho físico do arquivo (Ex: 'c:\temp\arquivo.pdf')</param>
+ <returns>String: String Base 64 do arquivo físico</returns>
+ <remarks></remarks>
+</member>
+<member name="M:FalaiDB.MODULO_CONFIGURACOES.Utils.AbrirArquivoBase64(System.String,System.String)">
+ <summary>
+ Abrir um arquivo em Base 64
+ </summary>
+ <param name="strStringBase64">Srting: String Base 64 do arquivo a ser aberto</param>
+ <param name="strExt">String: Extensção do arquivo a ser aberto (Ex:  "pdf")</param>
+</member>
+<member name="M:FalaiDB.MODULO_CONFIGURACOES.Utils.GetBooleanFromChar(System.Char)">
+ <summary>
+ Função que substitui o valor char para Boolean
+ ( S = True , N = False )
+ </summary>
+ <param name="strValor">Char</param>
+ <returns>Boolean</returns>
+ <remarks>Anereu Bighetti</remarks>
+</member>
+<member name="M:FalaiDB.MODULO_CONFIGURACOES.Utils.GetCharFromBoolean(System.Boolean)">
+ <summary>
+ Função que substitui o valor Boolean para Char
+ ( True = S, False = N )
+ </summary>
+ <param name="blnValor">Boolean</param>
+ <returns>Char</returns>
+ <remarks>Anereu Bighetti</remarks>
+</member>
+<member name="M:FalaiDB.MODULO_CONFIGURACOES.Utils.NumeroToExtenso(System.Decimal)">
+ <summary>
+ Função principal que recolhe o valor e chama as duas funções
+ auxiliares para a parte inteira e para a parte decimal
+ </summary>
+ <param name="number">Número a converter para extenso (Reais)</param>
+ 
+</member>
+<member name="M:FalaiDB.MODULO_CONFIGURACOES.Utils.getDecimal(System.Byte)">
+ <summary>
+ Função auxiliar - Parte decimal a converter
+ </summary>
+ <param name="number">Parte decimal a converter</param>
+</member>
+<member name="M:FalaiDB.MODULO_CONFIGURACOES.Utils.getInteger(System.Decimal)">
+ <summary>
+ Função auxiliar - Parte inteira a converter
+ </summary>
+ <param name="number">Parte inteira a converter</param>
+</member>
+<member name="M:FalaiDB.DataAccess.CloseConn">
+ <summary>
+ Sub para fechar a conexão com o banco de dados.
+ </summary>
+</member>
+<member name="M:FalaiDB.DataAccess.ExecutaStoredProcedureReader(System.String,System.Collections.Generic.List{MySql.Data.MySqlClient.MySqlParameter})">
+ <summary>
+ Função para efetuar consulta.
+ </summary>
+ <param name="Procedure">Nome da procedure.</param>
+ <param name="Parametros">Parametros da procedure.</param>
+ <returns></returns>
+</member>
+<member name="M:FalaiDB.DataAccess.ExecutaStoredProcedure(System.String,System.Collections.Generic.List{MySql.Data.MySqlClient.MySqlParameter})">
+ <summary>
+ Função que executa uma Stored Procedure sem retorno de valores (SP para INSERT, UPDATE, DELETE)
+ </summary>
+ <param name="Procedure">String: Nome da Procedure a ser executada</param>
+ <param name="Parametros">Data.SqlClient.SqlParameterCollection: Coleção de parâmetros a serem passados para a SP</param>
+ <returns>Boolean : Retorna a True se deu tudo ok</returns>
+ <remarks>Autor: Márcio Fessini</remarks>
+</member>
+<member name="M:FalaiDB.DataAccess.ExecutaStoredProcedureDataset(System.String,System.Collections.Generic.List{MySql.Data.MySqlClient.MySqlParameter})">
+ <summary>
+ Função que executa uma Stored Procedure sem retorno de valores (SP para INSERT, UPDATE, DELETE)
+ </summary>
+ <param name="Procedure">String: Nome da Procedure a ser executada</param>
+ <param name="Parametros">Data.SqlClient.SqlParameterCollection: Coleção de parâmetros a serem passados para a SP</param>
+ <returns>Integer: Retorna a quantidade de registros afetados pela SP</returns>
+ <remarks>Autor: Márcio Fessini</remarks>
+</member>
+</members>
+</doc>

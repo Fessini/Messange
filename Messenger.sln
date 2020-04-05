@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FalaAi", "FalaAi\FalaAi.vbproj", "{295B362B-03F9-4800-B19C-DFBE1EF41D4A}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Falai", "FalaAi\Falai.vbproj", "{295B362B-03F9-4800-B19C-DFBE1EF41D4A}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FalaiDB", "FalaiDB\FalaiDB.vbproj", "{43A577EF-2443-4EF9-8525-843946E5015D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{295B362B-03F9-4800-B19C-DFBE1EF41D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{295B362B-03F9-4800-B19C-DFBE1EF41D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{295B362B-03F9-4800-B19C-DFBE1EF41D4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43A577EF-2443-4EF9-8525-843946E5015D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43A577EF-2443-4EF9-8525-843946E5015D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43A577EF-2443-4EF9-8525-843946E5015D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43A577EF-2443-4EF9-8525-843946E5015D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
